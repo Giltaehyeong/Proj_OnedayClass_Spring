@@ -6,11 +6,10 @@
 			insert into memberList (uId, uPw, uName, uPhone, uZip, uAddr1, uAddr2, uEmail)
 				values 
 			(#{uId}, #{uPw}, #{uName}, #{uPhone}, #{uZip}, #{uAddr1}, #{uAddr2}, #{uEmail})
-
 	</insert>
 	
 	<select id="select_checkId" parameterType="hashMap" resultType="hashMap">
-			select uId from memberList where uId = #{uId
+			select uId from memberList where uId = #{uId}
 	</select>
 	
 	<select id="select_login" parameterType="hashMap" resultType="hashMap">
